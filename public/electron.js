@@ -11,7 +11,7 @@ function createWindow() {
         show: false,
         frame: process.platform !== 'darwin' ? false : 'hidden',
 
-        icon: 'src/assets/logo/JokerHat.png',
+        icon: 'src/static/assets/logo/JokerHat.png',
     });
 
     const startUrl = isDev ? 'http:localhost:3000' : `file://${path.join(__dirname, '../build/index.html')}`;
@@ -24,6 +24,7 @@ function createWindow() {
         mainWin = null;
     })
 }
+
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.
 // Some APIs can only be used after this event occurs.
